@@ -3,7 +3,7 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("n", "<leader>p", function()
-  local projects_dir = vim.fn.expand("~/Work")
+  local projects_dir = vim.g.projects_dir
   local dirs = {}
   for name, type in vim.fs.dir(projects_dir) do
     if type == "directory" then
