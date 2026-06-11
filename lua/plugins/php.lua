@@ -8,6 +8,9 @@ return {
         intelephense = {
           enabled = true,
         },
+        phpstan = {
+          enabled = true,
+        },
       },
     },
   },
